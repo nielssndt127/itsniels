@@ -6,12 +6,12 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: "Niels Schnadt — Performance Marketing. Built to Scale.",
   description:
-    "Led by the architect of DeepL's global performance engine. We build growth infrastructure for the next generation of category leaders.",
+    "First marketing hire at DeepL. Freelance performance marketing and growth operator for tech companies and scale-ups. Paid acquisition, attribution, and growth infrastructure.",
   metadataBase: new URL("https://itsniels.com"),
   openGraph: {
     title: "Niels Schnadt — Performance Marketing. Built to Scale.",
     description:
-      "Ex-DeepL Performance Lead. Technical growth infrastructure for category leaders.",
+      "First marketing hire at DeepL. Freelance performance marketing for tech companies and scale-ups.",
     url: "https://itsniels.com",
     siteName: "itsniels.com",
     locale: "en_US",
@@ -19,8 +19,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Niels Schnadt — Performance Engineering",
-    description: "Ex-DeepL. Technical growth infrastructure for hypergrowth.",
+    title: "Niels Schnadt — Paid Acquisition. Built to Scale.",
+    description: "First marketing hire at DeepL. Freelance performance marketing for tech scale-ups.",
   },
   robots: {
     index: true,

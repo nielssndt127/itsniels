@@ -132,23 +132,23 @@ function CredibilityStrip() {
       <Divider />
       <div className="pt-12 pb-4">
         <Reveal>
-          <p className="font-mono text-xs text-[#555555] uppercase tracking-widest mb-8">
+          <p className="font-mono text-xs text-[#777777] uppercase tracking-widest mb-8">
             Previously built and scaled growth at
           </p>
           <div className="flex flex-wrap items-center gap-x-8 gap-y-4">
             {pastCompanies.map((company, i) => (
               <span
                 key={company}
-                className="text-[#444444] text-sm font-semibold tracking-tight"
+                className="text-[#aaaaaa] text-sm font-semibold tracking-tight"
               >
                 {company}
                 {i < pastCompanies.length - 1 && (
-                  <span className="ml-8 text-[#2a2a2a]">·</span>
+                  <span className="ml-8 text-[#444444]">·</span>
                 )}
               </span>
             ))}
           </div>
-          <p className="font-mono text-xs text-[#333333] uppercase tracking-widest mt-6">
+          <p className="font-mono text-xs text-[#666666] uppercase tracking-widest mt-6">
             Experience across global platforms, ad tech, and high-growth scale-ups
           </p>
         </Reveal>
@@ -213,10 +213,10 @@ function Founder() {
 
             {/* Personal trust element */}
             <div className="border-t border-[#1a1a1a] pt-8 max-w-lg">
-              <p className="font-mono text-xs text-[#555555] uppercase tracking-widest mb-3">
+              <p className="font-mono text-xs text-[#777777] uppercase tracking-widest mb-3">
                 Off the clock
               </p>
-              <p className="text-[#666666] leading-relaxed text-sm">
+              <p className="text-[#888888] leading-relaxed text-sm">
                 Father of two, dog owner, and a former high-performance canoe athlete —
                 I competed at World and European Championships. The discipline, structure,
                 and relentless iteration that competitive sport demands is something I
@@ -266,7 +266,7 @@ function DeepLSection() {
               that powered DeepL&apos;s paid growth engine during their hypergrowth to
               unicorn status.
             </p>
-            <p className="text-sm text-[#666666] leading-relaxed max-w-xl mb-20">
+            <p className="text-sm text-[#888888] leading-relaxed max-w-xl mb-20">
               Scope included: multi-channel paid acquisition strategy, cross-market
               campaign architecture, attribution and tracking setup, performance
               reporting infrastructure, and team and function build-out from zero.
@@ -432,7 +432,7 @@ function ServiceRow({
     <Reveal delay={delay}>
       <div className="group grid grid-cols-12 gap-4 border-t border-[#1a1a1a] py-10 hover:border-white/10 transition-colors duration-300 cursor-default">
         <div className="col-span-1">
-          <span className="font-mono text-xs text-[#333] group-hover:text-[#555] transition-colors">
+          <span className="font-mono text-xs text-[#666666] group-hover:text-[#999999] transition-colors">
             {id}
           </span>
         </div>
@@ -502,7 +502,7 @@ function Footer() {
       <Divider />
       <div className="grid grid-cols-12 gap-4 pt-12 items-end">
         <div className="col-span-12 md:col-span-6">
-          <p className="font-mono text-xs text-[#555] leading-loose">
+          <p className="font-mono text-xs text-[#777777] leading-loose">
             itsniels.com
             <br />
             Based in Wendover, UK.
@@ -513,19 +513,19 @@ function Footer() {
             href="https://linkedin.com/in/nielsschnadt"
             target="_blank"
             rel="noopener noreferrer"
-            className="font-mono text-xs text-[#555] hover:text-white uppercase tracking-widest transition-colors duration-200"
+            className="font-mono text-xs text-[#777777] hover:text-white uppercase tracking-widest transition-colors duration-200"
           >
             LinkedIn ↗
           </a>
           <a
             href="#contact"
-            className="font-mono text-xs text-[#555] hover:text-white uppercase tracking-widest transition-colors duration-200"
+            className="font-mono text-xs text-[#777777] hover:text-white uppercase tracking-widest transition-colors duration-200"
           >
             Hire me ↗
           </a>
         </div>
         <div className="col-span-12 mt-8">
-          <p className="font-mono text-[10px] text-[#333] uppercase tracking-widest">
+          <p className="font-mono text-[10px] text-[#666666] uppercase tracking-widest">
             © {new Date().getFullYear()} Niels Schnadt &#x2F;&#x2F; All rights reserved
           </p>
         </div>

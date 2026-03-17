@@ -80,7 +80,7 @@ export function ContactForm() {
               looking to build or improve your paid acquisition, attribution, or growth
               infrastructure, get in touch.
             </p>
-            <p className="text-[#666666] mb-16 text-sm">
+            <p className="text-[#888888] mb-16 text-sm">
               I&apos;ll respond within one business day.
             </p>
           </Reveal>
