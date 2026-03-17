@@ -48,11 +48,11 @@ export function ContactForm() {
   };
 
   const inputClass =
-    "w-full bg-transparent border-b border-[#1a1a1a] py-4 text-white placeholder:text-[#444] focus:outline-none focus:border-[#007AFF] transition-colors duration-200 text-sm font-sans";
+    "w-full bg-transparent border-b border-[#333333] py-4 text-white placeholder:text-[#666666] focus:outline-none focus:border-[#007AFF] transition-colors duration-200 text-sm font-sans";
 
   return (
     <section id="contact" className="px-6 md:px-12 py-32 max-w-screen-xl mx-auto">
-      <div className="w-full h-px bg-[#1a1a1a]" />
+      <div className="w-full h-px bg-[#2a2a2a]" />
       <div className="grid grid-cols-12 gap-4 pt-24">
         {/* Label */}
         <div className="col-span-12 md:col-span-3">
