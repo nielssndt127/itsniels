@@ -86,14 +86,11 @@ function Hero() {
           </motion.p>
           <motion.h1
             {...fadeUp(0.2)}
-            className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-semibold tracking-tighter leading-[1.0] text-white mb-10"
+            className="text-5xl md:text-7xl lg:text-8xl font-semibold tracking-tighter leading-[0.92] text-white mb-10"
           >
-            I build and scale paid
+            Paid acquisition.
             <br />
-            acquisition systems that
-            <br />
-            turn ad spend into{" "}
-            <span className="text-[#007AFF]">predictable growth.</span>
+            <span className="text-[#007AFF]">Built to scale.</span>
           </motion.h1>
           <motion.p
             {...fadeUp(0.35)}
