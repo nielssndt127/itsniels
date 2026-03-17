@@ -4,12 +4,12 @@ import { GeistMono } from "geist/font/mono";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Niels Schnadt — Performance Engineering for Hypergrowth",
+  title: "Niels Schnadt — Performance Marketing. Built to Scale.",
   description:
     "Led by the architect of DeepL's global performance engine. We build growth infrastructure for the next generation of category leaders.",
   metadataBase: new URL("https://itsniels.com"),
   openGraph: {
-    title: "Niels Schnadt — Performance Engineering for Hypergrowth",
+    title: "Niels Schnadt — Performance Marketing. Built to Scale.",
     description:
       "Ex-DeepL Performance Lead. Technical growth infrastructure for category leaders.",
     url: "https://itsniels.com",

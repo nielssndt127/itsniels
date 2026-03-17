@@ -82,17 +82,15 @@ function Hero() {
             {...fadeUp(0.1)}
             className="font-mono text-xs text-[#888888] uppercase tracking-widest mb-8"
           >
-            Performance Engineering &#x2F;&#x2F; Growth Infrastructure
+            Performance Marketing &#x2F;&#x2F; Growth Infrastructure
           </motion.p>
           <motion.h1
             {...fadeUp(0.2)}
             className="text-5xl md:text-7xl lg:text-8xl font-semibold tracking-tighter leading-[0.92] text-white mb-10"
           >
-            Performance
+            Performance Marketing.
             <br />
-            Engineering
-            <br />
-            <span className="text-[#007AFF]">for Hypergrowth.</span>
+            <span className="text-[#007AFF]">Built to Scale.</span>
           </motion.h1>
           <motion.p
             {...fadeUp(0.35)}
@@ -163,7 +161,7 @@ function Founder() {
               infrastructure rather than just ad spend.
             </p>
             <p className="text-[#888888] leading-relaxed max-w-lg">
-              At DeepL, I was one of the first marketing hires and built the
+              At DeepL, I was the first marketing hire and built the
               performance function from the ground up. Today I work with
               ambitious companies who want that same level of precision applied
               to their growth engine.
@@ -204,7 +202,7 @@ function DeepLSection() {
               Unicorn Speed.
             </h2>
             <p className="text-lg text-[#888888] leading-relaxed max-w-xl mb-20">
-              One of DeepL&apos;s first marketing hires — brought in specifically to
+              DeepL&apos;s first marketing hire — brought in specifically to
               build the performance marketing function from zero. Designed the
               entire acquisition infrastructure that scaled across 30+ markets
               as the company grew into a global Unicorn.
