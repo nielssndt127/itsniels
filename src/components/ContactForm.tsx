@@ -58,7 +58,7 @@ export function ContactForm() {
         <div className="col-span-12 md:col-span-3">
           <Reveal>
             <p className="font-mono text-xs text-[#888888] uppercase tracking-widest sticky top-32">
-              Contact &#x2F;&#x2F; Get in Touch
+              Contact &#x2F;&#x2F; Hire Me
             </p>
           </Reveal>
         </div>
@@ -70,12 +70,18 @@ export function ContactForm() {
               Let&apos;s Work Together
             </p>
             <h2 className="text-4xl md:text-5xl lg:text-6xl font-semibold tracking-tighter leading-tight text-white mb-4">
-              Start a
+              Tell me about
               <br />
-              Conversation.
+              your growth challenge.
             </h2>
-            <p className="text-[#888888] mb-16 leading-relaxed">
-              Tell me about your growth goals. I&apos;ll get back to you within 24 hours.
+            <p className="text-[#999999] mb-4 leading-relaxed text-[15px]">
+              I work with a small number of clients at a time — so I can give each one
+              proper senior-level attention. If you&apos;re a tech company or scale-up
+              looking to build or improve your paid acquisition, attribution, or growth
+              infrastructure, get in touch.
+            </p>
+            <p className="text-[#666666] mb-16 text-sm">
+              I&apos;ll respond within one business day.
             </p>
           </Reveal>
 
@@ -112,7 +118,7 @@ export function ContactForm() {
                 />
                 <textarea
                   name="message"
-                  placeholder="Tell me about your project..."
+                  placeholder="Tell me about your growth challenge and where you are right now..."
                   value={form.message}
                   onChange={handleChange}
                   required

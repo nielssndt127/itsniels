@@ -64,7 +64,7 @@ function Nav() {
         href="#contact"
         className="font-mono text-xs text-[#888888] hover:text-white transition-colors duration-200 tracking-widest uppercase"
       >
-        Get in touch ↗
+        Hire me ↗
       </a>
     </motion.nav>
   );
@@ -77,34 +77,38 @@ function Hero() {
   return (
     <section className="min-h-screen flex flex-col justify-end px-6 md:px-12 pb-24 pt-32 max-w-screen-xl mx-auto">
       <div className="grid grid-cols-12 gap-4">
-        <div className="col-span-12 md:col-span-9 lg:col-span-7">
+        <div className="col-span-12 md:col-span-10 lg:col-span-8">
           <motion.p
             {...fadeUp(0.1)}
             className="font-mono text-xs text-[#888888] uppercase tracking-widest mb-8"
           >
-            Performance Marketing &#x2F;&#x2F; Growth Infrastructure
+            Freelance Performance Marketing &#x2F;&#x2F; Paid Acquisition &amp; Growth
           </motion.p>
           <motion.h1
             {...fadeUp(0.2)}
-            className="text-5xl md:text-7xl lg:text-8xl font-semibold tracking-tighter leading-[0.92] text-white mb-10"
+            className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-semibold tracking-tighter leading-[1.0] text-white mb-10"
           >
-            Performance Marketing.
+            I build and scale paid
             <br />
-            <span className="text-[#007AFF]">Built to Scale.</span>
+            acquisition systems that
+            <br />
+            turn ad spend into{" "}
+            <span className="text-[#007AFF]">predictable growth.</span>
           </motion.h1>
           <motion.p
             {...fadeUp(0.35)}
-            className="text-lg md:text-xl text-[#888888] leading-relaxed max-w-2xl mb-16"
+            className="text-base md:text-lg text-[#999999] leading-relaxed max-w-2xl mb-16"
           >
-            Ex-DeepL Performance Lead. I help ambitious companies build the growth
-            infrastructure that turns traction into category dominance.
+            First marketing hire at DeepL. Ex-Performance Lead. I help tech companies and
+            scale-ups build the paid acquisition, tracking, and growth infrastructure
+            needed to scale profitably — with full visibility into what&apos;s working.
           </motion.p>
           <motion.div {...fadeUp(0.5)} className="flex items-center gap-8">
             <a
               href="#contact"
               className="group inline-flex items-center gap-2 bg-white text-black text-sm font-semibold px-6 py-3 hover:bg-[#007AFF] hover:text-white transition-all duration-200"
             >
-              Work with us
+              Work with me
               <ArrowUpRight className="w-4 h-4 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
             </a>
             <a
@@ -121,7 +125,43 @@ function Hero() {
 }
 
 /* ─────────────────────────────────────────────
-   2. Founder
+   2. Credibility Strip
+───────────────────────────────────────────── */
+const pastCompanies = ["DeepL", "Tripadvisor", "Viator", "Criteo", "Marin Software"];
+
+function CredibilityStrip() {
+  return (
+    <section className="px-6 md:px-12 py-16 max-w-screen-xl mx-auto">
+      <Divider />
+      <div className="pt-12 pb-4">
+        <Reveal>
+          <p className="font-mono text-xs text-[#555555] uppercase tracking-widest mb-8">
+            Previously built and scaled growth at
+          </p>
+          <div className="flex flex-wrap items-center gap-x-8 gap-y-4">
+            {pastCompanies.map((company, i) => (
+              <span
+                key={company}
+                className="text-[#444444] text-sm font-semibold tracking-tight"
+              >
+                {company}
+                {i < pastCompanies.length - 1 && (
+                  <span className="ml-8 text-[#2a2a2a]">·</span>
+                )}
+              </span>
+            ))}
+          </div>
+          <p className="font-mono text-xs text-[#333333] uppercase tracking-widest mt-6">
+            Experience across global platforms, ad tech, and high-growth scale-ups
+          </p>
+        </Reveal>
+      </div>
+    </section>
+  );
+}
+
+/* ─────────────────────────────────────────────
+   3. Founder / About
 ───────────────────────────────────────────── */
 function Founder() {
   return (
@@ -153,19 +193,39 @@ function Founder() {
             <h2 className="text-4xl md:text-5xl font-semibold tracking-tighter leading-tight text-white mb-8">
               Performance Marketing
               <br />
-              <span className="text-[#007AFF]">&amp; Growth Expert.</span>
+              <span className="text-[#007AFF]">&amp; Growth Operator.</span>
             </h2>
-            <p className="text-[#888888] leading-relaxed mb-6 max-w-lg">
-              I&apos;ve spent my career at the intersection of data, technology,
-              and growth — turning paid acquisition into compounding
-              infrastructure rather than just ad spend.
+            <p className="text-[#999999] leading-relaxed mb-6 max-w-lg text-[15px]">
+              I&apos;m a freelance performance marketing and growth operator specialising in
+              paid acquisition, measurement, attribution, and growth infrastructure for
+              tech companies and scale-ups.
             </p>
-            <p className="text-[#888888] leading-relaxed max-w-lg">
-              At DeepL, I was the first marketing hire and built the
-              performance function from the ground up. Today I work with
-              ambitious companies who want that same level of precision applied
-              to their growth engine.
+            <p className="text-[#999999] leading-relaxed mb-6 max-w-lg text-[15px]">
+              I joined DeepL as their first marketing hire and built the performance
+              marketing function from scratch — developing the acquisition systems,
+              tracking foundations, and paid growth engine that scaled across 30+ markets
+              during their hypergrowth period. Today I bring that same level of rigour
+              and execution to high-growth SaaS and tech businesses.
             </p>
+            <p className="text-[#999999] leading-relaxed mb-10 max-w-lg text-[15px]">
+              I also build my own products — including Castlytics, an attribution platform
+              for performance marketers, and Tymedrop, an iOS productivity app. Both are
+              a direct reflection of how I think: analytically, technically, and with a
+              bias toward execution.
+            </p>
+
+            {/* Personal trust element */}
+            <div className="border-t border-[#1a1a1a] pt-8 max-w-lg">
+              <p className="font-mono text-xs text-[#555555] uppercase tracking-widest mb-3">
+                Off the clock
+              </p>
+              <p className="text-[#666666] leading-relaxed text-sm">
+                Father of two, dog owner, and a former high-performance canoe athlete —
+                I competed at World and European Championships. The discipline, structure,
+                and relentless iteration that competitive sport demands is something I
+                carry directly into how I work.
+              </p>
+            </div>
           </Reveal>
         </div>
       </div>
@@ -174,7 +234,7 @@ function Founder() {
 }
 
 /* ─────────────────────────────────────────────
-   3. DeepL Unicorn Proof
+   4. DeepL Case Study
 ───────────────────────────────────────────── */
 function DeepLSection() {
   return (
@@ -194,38 +254,45 @@ function DeepLSection() {
         <div className="col-span-12 md:col-span-9">
           <Reveal delay={0.1}>
             <p className="font-mono text-xs text-[#007AFF] uppercase tracking-widest mb-6">
-              Unicorn Proof
+              Paid Growth &#x2F;&#x2F; 0 to Global Scale
             </p>
             <h2 className="text-4xl md:text-5xl lg:text-6xl font-semibold tracking-tighter leading-tight text-white mb-8">
-              Scalability at
+              From Zero to
               <br />
-              Unicorn Speed.
+              Global Scale.
             </h2>
-            <p className="text-lg text-[#888888] leading-relaxed max-w-xl mb-20">
-              DeepL&apos;s first marketing hire — brought in specifically to
-              build the performance marketing function from zero. Designed the
-              entire acquisition infrastructure that scaled across 30+ markets
-              as the company grew into a global Unicorn.
+            <p className="text-base md:text-lg text-[#999999] leading-relaxed max-w-2xl mb-6">
+              Joined DeepL as the first marketing hire, brought in specifically to build
+              the performance marketing function from the ground up. Scaled paid
+              acquisition across 30+ markets — building the acquisition systems,
+              attribution foundations, tracking infrastructure, and measurement stack
+              that powered DeepL&apos;s paid growth engine during their hypergrowth to
+              unicorn status.
+            </p>
+            <p className="text-sm text-[#666666] leading-relaxed max-w-xl mb-20">
+              Scope included: multi-channel paid acquisition strategy, cross-market
+              campaign architecture, attribution and tracking setup, performance
+              reporting infrastructure, and team and function build-out from zero.
             </p>
           </Reveal>
 
           {/* Metric Grid */}
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-12 sm:gap-8">
             <MetricCard
-              value="Global Scale"
-              label="Market Reach"
+              value="30+"
+              label="Markets Launched"
               accentColor="blue"
               delay={0.1}
             />
             <MetricCard
-              value="30+"
-              label="Markets Launched"
+              value="0→1"
+              label="Function Built from Scratch"
               accentColor="lime"
               delay={0.2}
             />
             <MetricCard
               value="Unicorn"
-              label="Growth Stage"
+              label="Growth Stage Reached"
               accentColor="blue"
               delay={0.3}
             />
@@ -237,7 +304,7 @@ function DeepLSection() {
 }
 
 /* ─────────────────────────────────────────────
-   3. Product Lab
+   5. Product Lab
 ───────────────────────────────────────────── */
 interface ProductCardProps {
   name: string;
@@ -268,7 +335,7 @@ function ProductCard({ name, url, category, description, detail, delay = 0 }: Pr
           </div>
           <ExternalLink className="w-4 h-4 text-[#333] group-hover:text-[#007AFF] transition-colors duration-200 mt-2 flex-shrink-0" />
         </div>
-        <p className="text-[#888888] leading-relaxed mb-4 max-w-lg">{description}</p>
+        <p className="text-[#999999] leading-relaxed mb-4 max-w-lg text-[15px]">{description}</p>
         <p className="font-mono text-xs text-[#555] uppercase tracking-widest">{detail}</p>
       </a>
     </Reveal>
@@ -283,7 +350,7 @@ function ProductLab() {
         <div className="col-span-12 md:col-span-3">
           <Reveal>
             <p className="font-mono text-xs text-[#888888] uppercase tracking-widest sticky top-32">
-              Product Lab &#x2F;&#x2F; Built by Us
+              My Products &#x2F;&#x2F; Built from Scratch
             </p>
           </Reveal>
         </div>
@@ -291,17 +358,17 @@ function ProductLab() {
         <div className="col-span-12 md:col-span-9">
           <Reveal delay={0.1}>
             <p className="font-mono text-xs text-[#DFFF00] uppercase tracking-widest mb-6">
-              Practitioners
+              Founder
             </p>
             <h2 className="text-4xl md:text-5xl lg:text-6xl font-semibold tracking-tighter leading-tight text-white mb-8">
-              Built by
+              I don&apos;t just run
               <br />
-              Practitioners.
+              growth. I build.
             </h2>
-            <p className="text-lg text-[#888888] leading-relaxed max-w-xl mb-20">
-              We don&apos;t just use tools — we build them. Our marketing strategies
-              are informed by the same technical rigor used to create Castlytics
-              and Tymedrop.
+            <p className="text-base md:text-lg text-[#999999] leading-relaxed max-w-xl mb-20">
+              Alongside client work, I build my own products. These aren&apos;t side
+              projects — they reflect how I actually think about acquisition, attribution,
+              and product growth. Both are live and built entirely by me.
             </p>
           </Reveal>
 
@@ -309,17 +376,17 @@ function ProductLab() {
             <ProductCard
               name="Castlytics"
               url="https://castlytics.app"
-              category="SaaS &#x2F;&#x2F; Marketing Analytics"
-              description="Marketing analytics built for performance teams. Real attribution, real data, built by someone who needed it in the field."
-              detail="Castlytics.app — Marketing Infrastructure"
+              category="Attribution &#x2F;&#x2F; SaaS Platform"
+              description="An attribution and analytics platform I built for creator-led performance marketing. Castlytics connects ad spend to real outcomes — filling a gap I experienced first-hand working in performance marketing. It's practitioner-built attribution for people who care about what actually drives results."
+              detail="castlytics.app — Attribution &amp; Performance Analytics"
               delay={0.1}
             />
             <ProductCard
               name="Tymedrop"
               url="https://apps.apple.com"
-              category="iOS &#x2F;&#x2F; Productivity"
-              description="iOS productivity app engineered for high-output operators. Time management built with the same precision as performance campaigns."
-              detail="Available on the App Store — iOS"
+              category="iOS &#x2F;&#x2F; Productivity App"
+              description="A time management app for parents, built and launched entirely by me. Tymedrop demonstrates that I can take a product from zero to real adoption — I'm actively growing it toward becoming one of the top time management apps for parents on the App Store."
+              detail="Available on the App Store — Growing from 0 to adoption"
               delay={0.2}
             />
           </div>
@@ -330,26 +397,26 @@ function ProductLab() {
 }
 
 /* ─────────────────────────────────────────────
-   4. Services
+   6. Services
 ───────────────────────────────────────────── */
 const services = [
   {
     id: "01",
     title: "Paid Acquisition",
     description:
-      "High-scale paid media across Search, Social, and Programmatic. Architecture built for efficiency at volume.",
+      "I run and scale paid media across Google, Meta, and programmatic channels. From campaign architecture and bidding strategy to creative testing and spend efficiency — built to perform at volume and remain profitable as you scale.",
   },
   {
     id: "02",
-    title: "Attribution Systems",
+    title: "Attribution & Measurement",
     description:
-      "MTA, MMM, and incrementality testing. Know exactly what is working and where every dollar compounds.",
+      "I build the measurement layer that shows what's actually driving growth. Multi-touch attribution, media mix modelling, incrementality testing, and tracking infrastructure that makes your reporting trustworthy and your decisions defensible.",
   },
   {
     id: "03",
     title: "Growth Infrastructure",
     description:
-      "End-to-end growth systems: tracking stacks, data pipelines, dashboards, and automation layers.",
+      "I set up the technical foundations that make scaling predictable. Tracking stacks, data pipelines, analytics dashboards, and automation that give you reliable signals — so you can grow without flying blind.",
   },
 ];
 
@@ -372,13 +439,13 @@ function ServiceRow({
             {id}
           </span>
         </div>
-        <div className="col-span-11 md:col-span-5">
-          <h3 className="text-2xl md:text-3xl font-semibold tracking-tight text-white group-hover:text-[#007AFF] transition-colors duration-200">
+        <div className="col-span-11 md:col-span-4">
+          <h3 className="text-xl md:text-2xl font-semibold tracking-tight text-white group-hover:text-[#007AFF] transition-colors duration-200">
             {title}
           </h3>
         </div>
-        <div className="col-span-11 col-start-2 md:col-span-5 md:col-start-auto">
-          <p className="text-[#888888] leading-relaxed text-sm">{description}</p>
+        <div className="col-span-11 col-start-2 md:col-span-6 md:col-start-auto">
+          <p className="text-[#999999] leading-relaxed text-sm">{description}</p>
         </div>
         <div className="hidden md:flex col-span-1 items-center justify-end">
           <ArrowUpRight className="w-4 h-4 text-[#1a1a1a] group-hover:text-[#007AFF] group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all duration-200" />
@@ -395,11 +462,15 @@ function Services() {
       <div className="pt-24">
         <Reveal>
           <p className="font-mono text-xs text-[#888888] uppercase tracking-widest mb-6">
-            Services &#x2F;&#x2F; What We Do
+            Services &#x2F;&#x2F; What I Do
           </p>
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-semibold tracking-tighter text-white mb-20">
-            The Stack.
+          <h2 className="text-4xl md:text-5xl lg:text-6xl font-semibold tracking-tighter text-white mb-4">
+            The Work.
           </h2>
+          <p className="text-[#999999] text-sm leading-relaxed max-w-lg mb-20">
+            Senior-level execution, not strategy decks. I work directly with founders,
+            CMOs, and growth leads at tech companies and SaaS scale-ups.
+          </p>
         </Reveal>
 
         <div>
@@ -414,7 +485,7 @@ function Services() {
             href="#contact"
             className="group inline-flex items-center gap-3 font-mono text-sm text-[#888888] hover:text-white transition-colors duration-200"
           >
-            <span>Ready to build your growth infrastructure?</span>
+            <span>Ready to scale predictably? Let&apos;s talk.</span>
             <span className="text-[#007AFF] group-hover:translate-x-1 transition-transform duration-200">
               →
             </span>
@@ -426,7 +497,7 @@ function Services() {
 }
 
 /* ─────────────────────────────────────────────
-   5. Footer
+   7. Footer
 ───────────────────────────────────────────── */
 function Footer() {
   return (
@@ -453,7 +524,7 @@ function Footer() {
             href="#contact"
             className="font-mono text-xs text-[#555] hover:text-white uppercase tracking-widest transition-colors duration-200"
           >
-            Contact ↗
+            Hire me ↗
           </a>
         </div>
         <div className="col-span-12 mt-8">
@@ -474,6 +545,7 @@ export default function Home() {
     <main className="bg-black min-h-screen">
       <Nav />
       <Hero />
+      <CredibilityStrip />
       <Founder />
       <DeepLSection />
       <ProductLab />
